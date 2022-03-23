@@ -18,6 +18,7 @@ const Upload = () => {
     };
 
     reader.readAsDataURL(changeEvent.target.files[0]);
+
   }
 
   /**
@@ -38,7 +39,7 @@ const Upload = () => {
               File Upload
             </label>
 
-            <div
+            <form
               className='flex items-center justify-center w-full'
               method='post'
               onChange={handleOnChange}
@@ -66,7 +67,7 @@ const Upload = () => {
                 </div>
                 <input type='file' className='opacity-0' />
               </label>
-            </div>
+            </form>
           </div>
 
           <img src={imageSrc} className='flex justify-center p-2' />
