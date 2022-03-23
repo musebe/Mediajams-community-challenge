@@ -1,4 +1,7 @@
+import Image from 'next/image';
+
 export default function about() {
+
   return (
     <div className='relative py-16 bg-white overflow-hidden'>
       <div className='hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full'>
@@ -143,7 +146,7 @@ export default function about() {
             Submission Deadline
           </span>
           <p className='mt-8 text-xl text-gray-500 leading-8'>
-            The solution's codesandbox should be submitted in the code
+            The solution&apos;s codesandbox should be submitted in the code
             challenges channel by end of day <strong>27th March 2022 .</strong>
           </p>
           <span className='mt-10 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
@@ -162,8 +165,8 @@ export default function about() {
             reservations via the events section on discord to be notified when
             we go live.
           </p>
-          <figure className="mt-8">
-            <img
+          <figure className='mt-8'>
+            <Image
               className='w-full rounded-lg'
               src='/code.jpeg'
               alt='talk is cheap'

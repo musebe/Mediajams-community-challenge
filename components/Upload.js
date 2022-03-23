@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Upload = () => {
   const [imageSrc, setImageSrc] = useState();
@@ -70,7 +71,11 @@ const Upload = () => {
             </form>
           </div>
 
-          <img src={imageSrc} className='flex justify-center p-2' />
+          <img
+            src={imageSrc}
+            className='flex justify-center p-2'
+            alt={imageSrc}
+          />
 
           <div className='flex justify-center p-2'>
             {imageSrc && !uploadData && (
